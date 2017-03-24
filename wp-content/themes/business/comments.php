@@ -1,6 +1,6 @@
 <!-- Comments Form -->
 <div class="well">
-    <h4>Leave a Comment:</h4>
+    <h4><i class="fa fa-pencil-square-o fa-lg" aria-hidden="true"></i>Leave a Comment</h4>
     <?php
     $comments_args = array(
       'title_reply' => '',

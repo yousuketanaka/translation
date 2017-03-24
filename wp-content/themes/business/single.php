@@ -11,7 +11,7 @@
               <?php if ( have_posts()): ?>
                   <?php while(have_posts()): the_post(); ?>
                        <h1><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-                       <p class="lead">by 管理者</p>
+                       <p class="lead"><i class="fa fa-pencil" aria-hidden="true"></i>管理者</p>
                        <hr>
                        <p><span class="glyphicon glyphicon-time"></span><a class="archive-tim" href="<?php the_permalink(); ?>"><time datetime="<?php the_time('y-m-d'); ?>"></time>
                        <?php the_time( get_option('date_format') ); ?></a></p>
