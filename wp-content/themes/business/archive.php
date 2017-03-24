@@ -8,6 +8,7 @@
     <div class="container">
         <div class="row">
           <div class="col-lg-8">
+            <h2>BLOG</h2>
             <?php if ( have_posts()): ?>
              <div class="row blog-flame">
              <?php while ( have_posts() ) : the_post(); ?>

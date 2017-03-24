@@ -964,6 +964,31 @@ a.archive-tim{
     text-decoration: none;
 }
 
+.contact_submit{
+    background-color: #1e50a2;
+    border: 1px solid #1e50a2;
+    color: #fff;
+}
+
+
+.search-form-group{
+    position: relative;  
+}
+
+
+#search-form-btn{
+    position: absolute;  
+    top: 0;  
+    _top: 1px;  
+    left: 260px;
+}
+
+.input-group{
+    width: 80%;
+}
+
+
+
 
 
 
