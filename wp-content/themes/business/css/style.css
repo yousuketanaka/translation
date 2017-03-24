@@ -386,16 +386,18 @@ footer{
 .mainImage{
 	position: relative;
 	height: 50em;
-  padding: 2em;
+    padding: 2em;
 }
 
 #svg-about{
-	position:absolute;
-	top: 8em;
-	left: 5em;
+	position: absolute;
+	top: 8em!important;
+	left: 5em!important;
 	z-index: 10;
-	width: 90%;
+	width: 100%;
+	height: 100%;
 }
+
 
 .about-ttl{
 	float: left;
@@ -875,9 +877,92 @@ footer{
 	color: #16160e;
 }
 
+.attachment-post-thumbnails{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.archive-title h3 a{
+    color: #17184b;
+    text-decoration: none;
+}
+
+a.blog-read-more{
+    color: #9fa0a0;
+    text-decoration: none;
+}
+
+.blog-flame{
+    background-color: #fff;
+}
+
+a.archive-tim{
+    color: #888084;
+    text-decoration: none;
+    padding-left:1em;
+}
+
+.blog-main-part h1 a{
+    color: #17184b;
+    text-decoration: none;
+}
+
+.aligncenter.size-full{
+    width: 100%;
+}
+
+.comment-word,
+.logged-in-as{
+    display: none;
+}
+
+.commentmetadata a,
+.reply a,
+.comment-respond a{
+    color: #16160e;
+}
+
+.fn,
+.says{
+    display: none;
+}
+
+.comment-author.vcard{
+    float: left;
+}
 
 
+.comment-author.vcard img{
+    display: block;
+    margin-right: 2em;
+}
 
+.comment-meta .commentmetadata{
+    float: right;
+}
+
+.comment .byuser{
+    list-style: none;
+    padding: 1em;
+}
+
+.commets-list{
+    border: 1px solid #e6eae3;
+    padding: 1em;
+}
+
+.commets-list li{
+    list-style: none;
+}
+
+.comment-body{
+    background-color: #fff;
+}
+
+.comment-meta.commentmetadata a{
+    text-decoration: none;
+}
 
 
 

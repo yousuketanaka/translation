@@ -9,20 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
 
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Bowlby+One+SC|Indie+Flower|Martel:900|Montserrat:900" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
-    <link href="./css/agency.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/style.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<?php wp_head(); ?>
 </head>
 
 <div class="wrap">
@@ -86,9 +86,9 @@
                       <li class="page-scroll dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>その他<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                          <li><a href="./contact.html">お問い合わせ</a></li>
-                          <li><a href="./company.html">会社情報</a></li>
-                          <li><a href="./blog.html">ブログ</a></li>
+                          <li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
+                          <li><a href="<?php echo home_url(); ?>/company">会社情報</a></li>
+                          <li><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
                         </ul>
                       </li>
                   </ul>
