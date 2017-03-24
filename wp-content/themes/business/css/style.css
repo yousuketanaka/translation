@@ -987,6 +987,30 @@ a.archive-tim{
     width: 80%;
 }
 
+.fa-tags{
+    color: #9ea1a3;
+}
+
+.fa-caret-right{
+    color: #e198b4;
+    padding-right: 1em;
+}
+
+.well li a{
+    color: #16160e;
+    text-decoration: none;
+}
+
+.well li{
+    list-style-type: none;
+}
+
+li.cat-item:before{
+    font-family: FontAwesome;
+    content: "\f0da";
+    padding-right : 1em;
+    color: #e198b4;
+}
 
 
 

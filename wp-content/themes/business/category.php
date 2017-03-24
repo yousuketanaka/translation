@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <h2 class="category-name"><i class="fa fa-folder"></i>カテゴリー：<?php single_cat_title(); ?></h2>
+            <h2 class="category-name"><i class="fa fa-tags" aria-hidden="true"></i><?php single_cat_title(); ?></h2>
             <?php if ( have_posts()): ?>
                 <div class="row blog-flame">
                      <?php while ( have_posts() ) : the_post(); ?>

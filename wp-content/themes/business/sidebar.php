@@ -9,12 +9,10 @@
 <!-- Blog Categories Well -->
 <div class="well">
     <h4>Blog Categories</h4>
-    <?php if ( have_posts()): ?>
     <div class="row">
-        <?php while ( have_posts() ) : the_post(); ?>
         <div class="col-lg-6">
             <ul class="list-unstyled">
-                <li><a href="#">
+                <a href="#">
                 <?php 
                     $args = array(
                 	'show_option_all'    => '',
@@ -31,12 +29,12 @@
                 	'exclude'            => '',
                 	'exclude_tree'       => '',
                 	'include'            => '',
-                	'hierarchical'       => 1,
+                	'hierarchical'       => true,
                 	'title_li'           => '',
                 	'show_option_none'   => __( '' ),
                 	'number'             => null,
                 	'echo'               => 1,
-                	'depth'              => 0,
+                	'depth'              => 2,
                 	'current_category'   => 0,
                 	'pad_counts'         => 0,
                 	'taxonomy'           => 'category',
@@ -44,18 +42,28 @@
                     );
                     wp_list_categories( $args ); 
                 ?>
-                </a></li>
+                </a>
             </ul>
-            
         </div>
-        <?php endwhile; ?>
     </div>
     <!-- /.row -->
-    <?php endif; ?>
 </div>
 
 <!-- Side Widget Well -->
 <div class="well">
-    <h4>Side Widget Well</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
+    <h4>Blog Archive</h4>
+    <?php
+    $args = array(
+    	'type'            => 'monthly',
+    	'limit'           => '12',
+    	'format'          => 'html', 
+    	'before'          => '<i class="fa fa-caret-right fa-lg" aria-hidden="true"></i>',
+    	'after'           => '',
+    	'show_post_count' => true,
+    	'echo'            => 1,
+    	'order'           => 'DESC',
+    	'post_type'     => 'post'
+    );
+    wp_get_archives( $args );
+    ?>
 </div>
