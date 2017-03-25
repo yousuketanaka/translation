@@ -391,7 +391,7 @@ footer{
 
 #svg-about{
 	position: absolute;
-	top: 8em!important;
+	top: 0em!important;
 	left: 5em!important;
 	z-index: 10;
 	width: 100%;
@@ -1012,7 +1012,17 @@ li.cat-item:before{
     color: #e198b4;
 }
 
+.top-post-description h3 a{
+    color: #0f2350;
+    text-decoration: none;
+}
 
+
+.panel.panel-primary p,
+.panel.panel-success p,
+.panel.panel-danger p{
+    display: none;
+}
 
 
 

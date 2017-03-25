@@ -74,34 +74,40 @@
       <div class="container">
         <h2>Blog</h2>
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <div class="row media">
-              <div class="col-md-4 col-sm-4">
-                <a class="pull-left" href="<?php echo home_url(); ?>/blog">
-                  <img class="media-object" src="<?php bloginfo('template_url' ); ?>/img/tp-img2.jpg">
-                </a>
-              </div>
-              <div class="col-md-8 col-sm-8">
-                <div class="media-body">
-                  <h4 class="media-heading">Receta 2</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra v...</p>
-                  <ul class="list-inline list-unstyled">
-                    <li><span><i class="glyphicon glyphicon-calendar"></i> 2 days, 8 hours </span></li>
-                    <li>|</li>
-                    <span><i class="glyphicon glyphicon-eye-open"></i> 2</span>
-                    <li>|</li>
-                    <li>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star"></span>
-                      <span class="glyphicon glyphicon-star-empty"></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <hr>
+          <div class="col-md-8 col-md-offset-2">
+                <?php $args = array(
+                     'posts_per_page' => 5,
+                     'orderby' => 'post_date'
+                     ); 
+                ?>
+                
+                <?php $myposts = new WP_Query( $args ); ?>
+                  <?php if($myposts -> have_posts()): ?>
+                  <?php while($myposts -> have_posts()): $myposts->the_post();?>
+                
+                    <div class="row top-post-picture">
+                      <div class="col-md-4 col-sm-4">
+                        <a class="pull-left" href="<?php echo home_url(); ?>/blog">
+                          <?php if ( has_post_thumbnail() ) :
+                         the_post_thumbnail('post-thumbnails');
+                         else :
+                         echo '<img src="';
+                         bloginfo( 'template_url' );
+                         echo '/images/the_post_thumbnail_default.png" alt="デフォルト画像" />';
+                         endif; ?>
+                        </a>
+                      </div>
+                      <div class="col-md-8 col-sm-8">
+                        <div class="top-post-description">
+                          <h3><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+                          <p><i class="fa fa-pencil" aria-hidden="true"></i>By BambooShoots<span><a class="archive-tim" href="<?php the_permalink(); ?>"><i class="fa fa-clock-o" aria-hidden="true"></i><time datetime="<?php the_time('y-m-d'); ?>"></time><?php the_time( get_option('date_format') ); ?></a></span></p>
+                          <?php the_excerpt(); ?>
+                        </div>
+                      </div>
+                    </div>
+                     <hr>
+                  <?php endwhile; endif; ?>
+                <?php wp_reset_postdata(); ?>
           </div>
         </div>
       </div>
