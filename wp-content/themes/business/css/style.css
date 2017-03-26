@@ -1045,6 +1045,31 @@ li.cat-item:before{
     clear: both;
 }
 
+#comment{
+    width: 100%;
+}
+
+.comment-form-comment label{
+    display: none;
+}
+
+.form-submit > .submit{
+    width: 25%;
+    box-shadow:none;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
