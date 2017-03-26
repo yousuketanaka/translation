@@ -878,7 +878,10 @@ footer{
 }
 
 .attachment-post-thumbnails{
+    display: block;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
     padding: 1em;
 }
@@ -1022,6 +1025,24 @@ li.cat-item:before{
 .panel.panel-success p,
 .panel.panel-danger p{
     display: none;
+}
+
+.wp_rp_wrap{
+    margin-top: 5em;
+    padding: 1em;
+    background-color: #f8f4e6;
+}
+
+.wp_rp_content li a{
+    color: #e45e32;
+}
+
+.cat-item{
+    margin: 0.5em 0em;
+}
+
+.archive-pic{
+    clear: both;
 }
 
 
