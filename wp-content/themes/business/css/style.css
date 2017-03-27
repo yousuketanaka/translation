@@ -26,7 +26,8 @@ a{
 
 .g-nav-01{
 	margin-top: 1em;
-    border-bottom: 1px solid #924007;
+    /*border-bottom: 1px solid #924007;*/
+    background-color: #e9e4d4;
 }
 
 .page-scroll{
@@ -315,8 +316,7 @@ span.smalltitle{
 /*----------------------------------------------------------*/
 
 #blogarea{
-	margin-top: 4em;
-  padding: 1em 0em;
+  padding: 3em 0em;
 }
 
 #blogarea h2{
@@ -1596,6 +1596,7 @@ background-color: #f8f4e6;
 .g-nav-01{
     margin-top: 5em;
     border-bottom: none;
+    background-color: transparent;
 }
 
 
