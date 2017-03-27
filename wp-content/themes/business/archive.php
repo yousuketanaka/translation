@@ -29,9 +29,10 @@
                            <?php the_excerpt(); ?>
                     </div>
                </div>
+               
                <?php endwhile; ?>
+               <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
                <?php endif; ?>
-             <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
           </div>
           <div class="col-md-4">
             <?php get_sidebar(); ?>

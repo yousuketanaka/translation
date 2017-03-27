@@ -6,18 +6,18 @@
               <div class="col-md-6 col-sm-6 cp-area">
                 <h4><i class="fa fa-building-o" aria-hidden="true"></i>会社情報</h4>
                 <ul class="footerlist">
-                  <li><a href="<?php echo home_url(); ?>/about">ご挨拶</a></li>
-                  <li><a href="<?php echo home_url(); ?>/company">会社情報</a></li>
-                  <li><a href="<?php echo home_url(); ?>/contact">お問い合わせ</a></li>
-                  <li><a href="<?php echo home_url(); ?>/blog">ブログ</a></li>
+                  <li><a href="<?php echo home_url(); ?>/about"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>ご挨拶</a></li>
+                  <li><a href="<?php echo home_url(); ?>/company"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>会社情報</a></li>
+                  <li><a href="<?php echo home_url(); ?>/contact"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>お問い合わせ</a></li>
+                  <li><a href="<?php echo home_url(); ?>/blog"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>ブログ</a></li>
                 </ul>
               </div>
               <div class="col-md-6 col-sm-6 svc-area">
               　<h4><i class="fa fa-paperclip" aria-hidden="true"></i>サービス情報</h4>
                 <ul class="footerlist">
-                  <li><a href="<?php echo home_url(); ?>/accounting">進出/会計業務サポート</a></li>
-                  <li><a href="<?php echo home_url(); ?>/tsuyaku">通訳/翻訳サポート</a></li>
-                  <li><a href="<?php echo home_url(); ?>/education">日本語教育/人事スタッフ育成/ファシリテーター育成</a></li>
+                  <li><a href="<?php echo home_url(); ?>/accounting"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>進出/会計業務サポート</a></li>
+                  <li><a href="<?php echo home_url(); ?>/tsuyaku"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>通訳/翻訳サポート</a></li>
+                  <li><a href="<?php echo home_url(); ?>/education"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>日本語教育/人事スタッフ育成/ファシリテーター育成</a></li>
                 </ul>
               </div>
           </div>

@@ -1060,6 +1060,11 @@ li.cat-item:before{
     font-family: sans-serif;
 }
 
+.wp-pagenavi{
+    margin-top: 5em;
+    text-align: center;
+}
+
 
 
 
